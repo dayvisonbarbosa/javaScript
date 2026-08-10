@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,13 @@
 </head>
 <body>
     <script>
-        var preco
+        var N1, N2, media
 
-        preco = Number(window.prompt("Qual é o preço?"))
+        N1 = Number(window.prompt("Informe sua 1a. Nota: "))
+        N2 = Number(window.prompt("Informe sua 2a. Nota: "))
+        media = N1 + N2
+        window.alert(media >= 7 ? "Aprovado" : "Reprovado")
+
     </script>
 </body>
 </html>
