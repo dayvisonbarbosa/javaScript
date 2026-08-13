@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #botao {
+            margin-top: 10px;
+        }
+
+        #velocidade {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Velocidade</h1>   
+    Você percorreu <input type="number" name="km" id="velocidade"> <strong>Km/h</strong> <br>
+    <input type="button" value="Enviar" onclick="resultado()" id="botao">
+    <div id="divresultado">
+
+    </div>
+    <script>
+        function resultado() {
+            var ligacao, jsvelocidade, resultado
+            ligacao = document.querySelector("#velocidade")
+            resultado = document.querySelector("#divresultado")
+            jsvelocidade = Number(ligacao.value)
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${jsvelocidade} Km/h</strong></p>`
+            resultado.innerHTML += `<p>Dirija sempre com o cinto de segurança</p>`
+        } 
+    </script>
+</body>
+</html>
