@@ -27,7 +27,10 @@
             ligacao = document.querySelector("#velocidade")
             resultado = document.querySelector("#divresultado")
             jsvelocidade = Number(ligacao.value)
-            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${jsvelocidade} Km/h</strong></p>`
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${jsvelocidade}Km/h</strong></p>`
+            if (jsvelocidade > 60) {
+                resultado.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
             resultado.innerHTML += `<p>Dirija sempre com o cinto de segurança</p>`
         } 
     </script>
