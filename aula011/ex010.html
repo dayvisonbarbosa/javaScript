@@ -9,6 +9,26 @@
     <h1>Teste de Velocidade</h1>    
 
     Informe a Velocidade: <input type="number" name="velocidade" id="velocidade"> <strong>Km/h</strong>
-    <p><input type="button" value="Enviar"></p>
+    <p><input type="button" value="Enviar" onclick="kilometros()"></p>
+    <div id="divresultado">
+
+    </div>
+
+    <script>
+        function kilometros() {
+            var ligacao, jsvelocidade, jsresultado
+
+            ligacao = document.querySelector("#velocidade")
+            jsvelocidade = Number(ligacao.value)
+            jsresultado = document.querySelector("#divresultado")
+            if (jsresultado > 60) {
+                jsresultado.innerHTML = `<p>Você percorreu ${jsvelocidade} Km/h e ultrapassou o limite de velocidade, <strong>MULTADO!</strong></p>`  
+            } else {
+                jsresultado.innerHTML = `Você percorreu ${jsvelocidade} Km/h, continue sem ultrapassar os limites :) `  
+            }
+
+            jsresultado.innerHTML += "<p>Dirija sempre utilizando o cinto de segurança.</p>"
+        }
+    </script>
 </body>
 </html>
