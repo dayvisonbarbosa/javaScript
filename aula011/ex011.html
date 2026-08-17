@@ -5,11 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #pais {
+            width: 70px;
+            margin-left: 5px;
+        }    
 
+        #botao {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Sistema de Viagem</h1>    
-    <p>Bem-vindo(a) ao melhor site para planejar suas próximas viagens!</p>
+    <p>Bem-vindo(a) ao melhor site para planejar <br> suas próximas viagens!</p>
+    <p>Selecione uma de nossas opções de países <br> que você deseja visitar.</p>
+    <h2>Menu de Seleção</h2>
+    <ul>
+        <li>Brasil</li>
+        <li>EUA (Estados Unidos da América)</li>
+    </ul>
+    Confirme o País <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" id="botao" onclick="sistema()">
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function sistema() {
+            var ligacao, jspais, jsresultado
+
+            ligacao = document.getElementById("pais")
+            jspais = ligacao.value
+            jsresultado = document.getElementById("resultado")
+            jsresultado.innerHTML = `<p>Você escolheu uma viagem ao país ${jspais}.</p>`
+            if (jspais === "Brasil") {
+                jsresultado.innerHTML += `
+                <h3>Oque Aguardar:</h3>
+                <p>Praias e Climas Diveros;</p>
+                <p>Cultura Abundante;</p>
+                <p>Diversos Pratos Regionais;</p>`
+
+            } else if (jspais === "EUA") {
+                jsresultado.innerHTML += `
+                <h3>Oque Aguardar:</h3>
+                <p>Climas Frios e Amenos;</p>
+                <p>Marketplace Abundante;</p>
+                <p>Diversidade Cultural;</p>`   
+            }
+        }
+
+    </script>
 </body>
 </html>
