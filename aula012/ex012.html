@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input {
+            width: 50px;
+        }
+
+        #botao {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Votação presidencial 2027</h1>   
+    <h2>Escolha seu número presidencial</h2>
+    <ul>
+        <li>22- Flávio Bolsonaro</li>
+        <li>14- Renam Santis</li>
+        <li>13- Lula</li>
+    </ul>
+    Seu voto? <input type="text" name="voto" id="voto"> <br>
+    Quantos anos você tem? <input type="number" name="idade" id="idade"> <br>
+    <input type="button" value="Enviar" id="botao" onclick="validar()">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function validar() {
+            var ligacaovoto, ligacaoidade, jsvoto, jsidade, jsresultado
+            ligacaovoto = document.getElementById("voto")
+            ligacaoidade = document.getElementById("idade")
+            jsresultado = document.getElementById("resultado")
+            jsvoto = (ligacaovoto.value)
+            jsidade = Number(ligacaoidade.value)
+            if (jsidade < 16) {
+                jsresultado.innerHTML = `Você não tem idade suficiente para votar.`
+            } else {
+                if (jsvoto === "13") {
+                    jsresultado.innerHTML = `Candidato 13`    
+                } else if (jsvoto === "14") {
+                    jsresultado.innerHTML = `Candidato 14`
+                } else if (jsvoto === "22") {
+                    jsresultado.innerHTML = `Candidato 22`
+                } else {
+                    jsresultado.innerHTML = "Inválido"
+                }
+            }    
+        } 
+    </script>
 </body>
 </html>
