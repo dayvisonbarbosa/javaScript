@@ -24,6 +24,17 @@ body {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
         }
 
+        #hora {
+            text-align: center;
+            padding: 10px;
+            padding-top: 30px;
+        }
+
+        #imagem {
+            text-align: center;
+            padding: 8px;
+        }
+
         footer p {
             text-align: center;
             color: white;
