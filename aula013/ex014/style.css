@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(68, 157, 240);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#mensagem p {
+    text-align: center;    
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
