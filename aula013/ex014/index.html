@@ -13,11 +13,19 @@
     <main>
         <section>
             <div>
-               Ano em que Nasceu <input type="number" name="ano" id="ano" min="200">
+               Ano em que Nasceu <input type="number" name="ano" id="ano" min="1">
+               <p>
+                    Sexo
+                    <input type="radio" name="sexo" id="mas">
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="sexo">Feminino</label>
+               </p>
+               <p><input type="button" value="Vefificar"></p>
             </div>
 
-            <div id="resultado">
-                
+            <div id="resultado" onclick="verificar">
+                Aqui será o resultado    
             </div>
         </section>
     </main>
