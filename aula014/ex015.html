@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Contador</h1>    
+    <p>Executar Contador? (S/N)
+        <input type="text" name="resposta" id="resposta">
+    </p>
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var ligacao, jsresposta, jsresultado
+
+            ligacao = document.getElementById("resposta")
+            jsresultado = document.getElementById("resultado")
+            jsresposta = ligacao.value
+            if (jsresposta == "S") {
+                var c = 1
+                while (c <= 6) {
+                    jsresultado.innerHTML += `${c} ,`    
+                    c++
+                } 
+            } else if (jsresposta == "N") {
+                    jsresultado.innerHTML = "Comando não executado."
+                } else {
+                    jsresultado.innerHTML = "Verifique as respostas e tente novamente."
+                }
+
+        }
+    </script>
 </body>
 </html>
