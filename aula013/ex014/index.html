@@ -13,19 +13,19 @@
     <main>
         <section>
             <div>
-               Ano em que Nasceu <input type="number" name="ano" id="ano" min="1">
+               <p>Ano em que Nasceu: <input type="number" name="ano" id="ano" min="1"></p>
                <p>
-                    Sexo
-                    <input type="radio" name="sexo" id="mas">
+                    Sexo:
+                    <input type="radio" name="sexo" id="mas" checked>
                     <label for="mas">Masculino</label>
                     <input type="radio" name="sexo" id="fem">
                     <label for="sexo">Feminino</label>
                </p>
-               <p><input type="button" value="Vefificar"></p>
+               <p><input type="button" value="Verificar" onclick="verificar()"></p>
             </div>
 
-            <div id="resultado" onclick="verificar">
-                Aqui será o resultado    
+            <div id="resultado">
+                Preencha os dados acima para ver o resultado!    
             </div>
         </section>
     </main>
