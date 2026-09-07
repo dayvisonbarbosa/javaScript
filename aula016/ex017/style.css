@@ -26,16 +26,6 @@ section p {
     margin-left: 10px;
 }
 
-#resultado {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-}
-
-#resultado > p {
-    padding: 5px;
-}
-
 footer p {
     text-align: center;
     color: white;
