@@ -8,9 +8,9 @@ function contar() {
 
     if (ligacaoin.value === "" || ligacaofim.value === "" || ligacaopasso.value === "") {
         jsresultado.innerHTML = "Não foi possível executar a conta"
-    } else if (ligacaopasso.value === "0" ) {
+    } else if (ligacaopasso.value === "0" || ligacaopasso.value < 0 ) {
         window.alert("Passo inválido.")
-    } else {
+    } else if (ligacaoin.value < ligacaofim.value) {
         jsinicio = Number(ligacaoin.value)
         jsfim = Number(ligacaofim.value)
         jspasso = Number(ligacaopasso.value)
@@ -23,5 +23,18 @@ function contar() {
             jsresultado.innerHTML += `${c} 👉`
         }
         jsresultado.innerHTML += `🏁`
+    } else if (ligacaoin.value > ligacaofim.value) {
+        jsinicio = Number(ligacaoin.value)
+        jsfim = Number(ligacaofim.value)
+        jspasso = Number(ligacaopasso.value)
+
+        jsresultado.innerHTML = `${jsinicio} 👉 `
+        c = jsinicio
+
+        while (c > jsfim) {
+            c = c - jspasso
+            jsresultado.innerHTML += `${c} 👉`
+        }
+        jsresultado.innerHTML += `🏁`    
     }
 }
