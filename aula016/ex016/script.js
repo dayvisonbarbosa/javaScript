@@ -9,7 +9,7 @@ function contar() {
     if (ligacaoin.value === "" || ligacaofim.value === "" || ligacaopasso.value === "") {
         jsresultado.innerHTML = "Não foi possível executar a conta"
     } else if (ligacaopasso.value === "0" ) {
-        window.alert("Passo inválido")
+        jsresultado.innerHTML = "Passo inválido"
     } else {
         jsinicio = Number(ligacaoin.value)
         jsfim = Number(ligacaofim.value)
