@@ -18,6 +18,24 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
+section p {
+    padding-bottom: 10px;
+}
+
+#botao {
+    margin-left: 10px;
+}
+
+#resultado {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+#resultado > p {
+    padding: 5px;
+}
+
 footer p {
     text-align: center;
     color: white;
