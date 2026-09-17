@@ -1,15 +1,32 @@
+let liganum = document.getElementById("num")
+let jstabela = document.getElementById("tabela")
+let jsresultado = document.getElementById("resultado")
+let valores = []
 
+// Funções de Validação (Retornam true ou false)
 
-function adicionar() {
-    let liganum = document.getElementById("num")
-    let jsnum = liganum.value
-    let jstabela = document.getElementById("itabela")
-    if (jsnum == "") {
-        window.alert("Preencha os dados corretamente.")
-    } else if (jsnum < 1 || jsnum > 100) {
-        window.alert("Valor fora do limite.")
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
     } else {
-        jstabela.innerHTML += `<option>Valor ${jsnum} adicionado</option>`
+        return false
     }
-    
+}
+
+function inLista(n, vl) {
+    if (vl.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+
+    } 
+}
+
+// Função Disparada pelo Botão Adicionar
+
+function adicionar() { 
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+    } else {
+        window.alert("Valor inválido ou já encontrado na lista.")
+    }
 }
