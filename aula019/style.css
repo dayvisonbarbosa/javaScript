@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(51, 197, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px
+}
+
+#num {
+    width: 100px;
+}
+
+#botao {
+    margin-left: 5px;
+}
+
+#itabela {
+    width: 150px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
