@@ -11,4 +11,7 @@ function vetores() {
     /* window.alert(`O vetor tem ${vet.length} posições.`) */
 
     /*window.alert(`O primeiro valor do vetor é ${vet[0]}`) - Mostra o valor armazenado em um vetor. */
+
+    /* O método indexOf é utilizado para dizer qual é o índice de um elemento dentro do vetor. Ex:
+    indexOf(1) - O elemento 1 está no índice 0. */
 }
