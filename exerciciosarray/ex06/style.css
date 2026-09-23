@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(78, 133, 236);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 15px;
+    background-image: linear-gradient(to right, rgb(78, 133, 236), rgb(48, 97, 189));
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+h1 {
+    color: white;
+}
+
+#pheader {
+    padding-top: 10px;
+    color: white;
+}
+
+ul {
+    padding: 15px;
+    color: white;
+}
+
+li {
+    display: inline-block;
+}
+
+#dados {
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#pinput {
+    color: rgb(48, 97, 189);
+    padding: 15px;
+    font-size: 1em;
+}
+
+#vaga {
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
