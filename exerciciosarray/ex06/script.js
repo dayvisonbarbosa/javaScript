@@ -1,29 +1,3 @@
-/*
-let jsvagas = document.getElementById("vaga")
-let jsa = document.getElementById("a")
-let jsb = document.getElementById("b")
-let jsc = document.getElementById("c")
-let jsd = document.getElementById("d")
-
-function adicionar() {
-if (jsvagas.value == "A" || jsvagas.value == "a") {
-    jsa.innerHTML = `<li>[X]</li>`
-} else if (jsvagas.value == "B" || jsvagas.value == "b") {
-    jsb.innerHTML = `<li>[X]</li>`
-} else if (jsvagas.value == "C" || jsvagas.value == "c") {
-    jsc.innerHTML = `<li>[X]</li>`
-} else if (jsvagas.value == "D" || jsvagas.value == "d") {
-    jsd.innerHTML = `<li>[X]</li>`
-} else {
-    window.alert("Preencha com alguma das vagas disponíveis no momento")
-}
-
-jsvagas.value = ""
-jsvagas.focus()
-
-}
-
-*/
 
 let vagasHTML = [
     document.getElementById("a"),
