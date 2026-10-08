@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Supermercado Digital</h1>
+        <p id="introducao">
+            <strong>Faça suas Compras Online, Compre com Facilidade!</strong>
+        </p>
+    </header>
+    <main>
+       <section id="itens">
+            <h2>Itens disponíveis</h2>
+            <ul>
+                <li id="A">Leite</li>
+                <li id="B">Café</li>
+                <li id="C">Arroz</li>
+                <li id="D">Feijão</li>
+                <li id="E">Biscoito</li>
+            </ul>
+       </section>
+
+       <section id="dados">
+            <p>
+                Oque quer comprar? 
+                <input type="text" name="item" id="item">
+                <input type="button" value="Comprar" id="botao" onclick="comprar()">
+            </p>
+       </section>
+
+        <div id="resultado">
+            Total de Itens Comprados: 
+        </div>
+    </main>
+    <footer>
+        &copy; Dayvison
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

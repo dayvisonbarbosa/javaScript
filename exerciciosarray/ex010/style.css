@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(151, 88, 88);
+}
+
+main {
+    height: 90vh;
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(to right, #a3a324, #7c2323);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#introducao {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+#itens {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 5px;
+}
+
+#dados {
+    background-color: white;
+    width: 310px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#item {
+    width: 80px;
+    text-transform: capitalize;
+}
+
+#botao {
+    margin-left: 5px;
+}
+
+#resultado {
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+
+
+
