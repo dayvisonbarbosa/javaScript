@@ -24,6 +24,8 @@ function adicionar() {
         item.textContent = `String ${valor} adicionada`
         select.appendChild(item)
         array1.push(valor)
+
+        res.innerHTML = ""
     }
 
     input.value = ""
