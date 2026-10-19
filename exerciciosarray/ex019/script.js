@@ -6,7 +6,7 @@ let verificar = true
 
 function analisarArray(vetor, resultado) {
     let p1 = document.createElement("p")
-    p1.innerHTML = `O total de elementos digitados: ${vetor.length}`
+    p1.innerHTML = `O total de elementos digitados: ${vetor.length}.`
     resultado.appendChild(p1)
 
     let maior = vetor[0]
@@ -28,20 +28,20 @@ function analisarArray(vetor, resultado) {
     let media = soma / vetor.length
 
     let p2 = document.createElement("p")
-    p2.innerHTML = `Maior Número: ${maior}`
+    p2.innerHTML = `Maior Número: ${maior}.`
     resultado.appendChild(p2)
 
     let p3 = document.createElement("p")
-    p3.innerHTML = `Menor Número: ${menor}`
+    p3.innerHTML = `Menor Número: ${menor}.`
     resultado.appendChild(p3)
 
 
     let p4 = document.createElement("p")
-    p4.innerHTML = `Soma de todos os Números: ${soma}`
+    p4.innerHTML = `Soma de todos os Números: ${soma}.`
     resultado.appendChild(p4)
 
     let p5 = document.createElement("p")
-    p5.innerHTML = `A média entre os valores: ${media}`
+    p5.innerHTML = `A média entre os valores: ${media}.`
     resultado.appendChild(p5)
 
 }
@@ -53,11 +53,11 @@ function adicionar() {
     } else if (verificar == true) {
         array.push(valor)
         let item = document.createElement("option")
-        item.textContent = `Valor ${valor} adicionado`
+        item.textContent = `Valor ${valor} adicionado.`
         select.appendChild(item)
         res.innerHTML = ""
     } else {
-        window.alert("O programa foi finalizado")
+        window.alert("O programa foi finalizado.")
     }
 
     input.value = ""
