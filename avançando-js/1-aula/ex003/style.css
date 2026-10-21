@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(110, 197, 255);
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(78, 133, 236), rgb(48, 97, 189));
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    height: 100vh;
+}
+
+#dados {
+    background-color: white;
+    margin: auto;
+    margin: 30px 15px 10px 15px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+section p {
+    padding: 5px;
+}
+
+#string {
+    width: 80px;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+#adicionar {
+    margin-left: 5px;
+}
+
+#select {
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+option {
+    padding: 5px;
+}
+
+#resultado {
+    margin-top: 10px;
+    width: 200px;
+}
+
+footer {
+    width: auto;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(78, 133, 236), rgb(48, 97, 189));
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
