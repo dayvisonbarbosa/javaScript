@@ -12,6 +12,6 @@
 
 console.log(parOuImpar(4)) */
 
-const parOuImpar = a => (a % 2 == 0) ? "Par" : "Impar"
+const parOuImpar = a => (a % 2 == 0) ? "Par" : "Impar";
 
-console.log(parOuImpar(3))
+console.log(parOuImpar(3));

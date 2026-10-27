@@ -7,6 +7,6 @@ function somarValores(a, b) {
 
 console.log(somarValores(2, 2)) */
 
-console.log(somarValoresArrow(2, 2))
+console.log(somarValoresArrow(2, 2));
 
-const somarValoresArrow = (a, b) => a + b;
+const somarValoresArrow = (a, b) => a + b;;
